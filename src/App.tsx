@@ -1,7 +1,11 @@
 import * as React from 'react';
-import './App.css';
+import './assets/css/App.css';
 
-import logo from './logo.svg';
+import logo from './assets/images/logo.svg';
+
+import typeScript from './assets/ts/typeScript'
+
+typeScript.typeFn()
 
 class App extends React.Component {
   public render() {
