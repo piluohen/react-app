@@ -2,7 +2,7 @@ import consoleType from '../common'
 
 const typeFn = () => {
   // 字符串
-  const user = '张飞'
+  const user:string = '张飞'
   let str:string = `他的名字是${user}`;
   consoleType(str)
 

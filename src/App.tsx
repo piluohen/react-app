@@ -1,11 +1,17 @@
 import * as React from 'react';
 import './assets/css/App.css';
 
+import Clock from './components/clock';
+
 import logo from './assets/images/logo.svg';
 
 import typeScript from './assets/ts/typeScript'
 
-typeScript.typeFn()
+typeScript.classFn()
+
+function Name(props:any) {
+  return <div>我的名字是：{ props.name }</div>
+}
 
 class App extends React.Component {
   public render() {
@@ -18,6 +24,8 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <Name name="张飞"></Name>
+        <Clock />
       </div>
     );
   }
